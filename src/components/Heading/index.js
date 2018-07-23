@@ -64,10 +64,10 @@ const BgBlendImage = ({ item, index }) => {
   return <div style={bgBlendStyleFor(index, nextIndex)} />
 }
 
-const Heading = () => (
+const Heading = ({ version }) => (
   <div style={styles.wrapper}>
-    {bgs.map((item, i) => <BgImage key={i} index={i} />)}
-    {bgs.map((item, i) => <BgBlendImage key={i} index={i} />)}
+    {[1].includes(version) && bgs.map((item, i) => <BgImage key={i} index={i} />)}
+    {[2].includes(version) && bgs.map((item, i) => <BgBlendImage key={i} index={i} />)}
   </div>
 )
 
