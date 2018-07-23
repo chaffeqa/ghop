@@ -12,3 +12,17 @@
     opacity: 0;
   }
 }
+@keyframes heading-bg-animation-twice {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

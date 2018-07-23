@@ -28,7 +28,7 @@ const styles = {
     justifyContent: 'center',
   },
 }
-const versions = [1,2]
+const versions = [1, 2, 3]
 
 const Sample = ({ version }) => (
   <Layout>
@@ -40,7 +40,6 @@ const Sample = ({ version }) => (
         Version {version}
       </Link>
     ))}
-    
   </Layout>
 )
 
