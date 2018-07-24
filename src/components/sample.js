@@ -36,7 +36,7 @@ const Sample = ({ version }) => (
     <h1 style={styles.h1}>Granby House of Prayer</h1>
     <p style={styles.p}>Version: {version || 1}</p>
     {versions.map(version => (
-      <Link style={styles.about} to={version == 1 ? '/' : `v${version}`}>
+      <Link style={styles.about} to={version == 1 ? '/' : `/v${version}`}>
         Version {version}
       </Link>
     ))}
