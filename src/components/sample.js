@@ -19,7 +19,6 @@ import bg4 from './Heading/4.jpg'
 import bg5 from './Heading/5.jpg'
 import './section.css'
 
-
 const styles = {
   h1: {
     height: '20vh',
@@ -68,32 +67,36 @@ const styles = {
 }
 const versions = [1, 2, 3]
 
-
 class Section extends React.Component {
   render() {
-    const {section, imageSrc, revealed, component} = this.props
+    const { section, imageSrc, revealed, component } = this.props
     return (
-      <section id={section} className={['section', revealed ? 'section-revealed' : 'section-hidden'].join(' ')}>
-        <div className='section-img'><img src={imageSrc} alt={section} /></div>
-        <div className='section-text'>{component}</div>
+      <section
+        id={section}
+        className={[
+          'section',
+          revealed ? 'section-revealed' : 'section-hidden',
+        ].join(' ')}
+      >
+        <div className="section-img">
+          <img src={imageSrc} alt={section} />
+        </div>
+        <div className="section-text">{component}</div>
       </section>
     )
   }
 }
 
-let sections = [];
-
+let sections = []
 
 class Sample extends React.Component {
-  
-  
-  
-  boundListener = false;
-  
-  onScroll = (event) => {
+  boundListener = false
+
+  onScroll = event => {
     // console.log(event)
     const screen = window.screen
-    const scrollBot = window.scrollY + (screen.availHeight || screen.height) * 2/3
+    const scrollBot =
+      window.scrollY + ((screen.availHeight || screen.height) * 2) / 3
     for (let i = 0; i < sections.length; i++) {
       const section = sections[i]
       if (!section.revealed && section.rect.top <= scrollBot) {
@@ -103,9 +106,9 @@ class Sample extends React.Component {
       }
     }
   }
-  
-  updateSections = (event) => {
-    console.log('resize? ' + !!(event));
+
+  updateSections = event => {
+    console.log('resize? ' + !!event)
     const sectionsEls = document.querySelectorAll('.section')
     for (let i = 0; i < sectionsEls.length; i++) {
       const el = sectionsEls[i]
@@ -117,18 +120,18 @@ class Sample extends React.Component {
       section.id = el.id
     }
   }
-  
+
   componentDidMount() {
     if (!this.boundListener) {
       this.updateSections()
       document.addEventListener('resize', this.updateSections)
-      document.addEventListener('scroll', this.onScroll, {passive: true})
+      document.addEventListener('scroll', this.onScroll, { passive: true })
       this.boundListener = true
     } else {
       console.log('ignore')
     }
   }
-  
+
   componentWillUnmount() {
     if (this.boundListener) {
       document.removeEventListener('resize', this.updateSections)
@@ -136,22 +139,62 @@ class Sample extends React.Component {
       this.boundListener = false
     }
   }
-  
+
   render() {
-    const {version} = this.props
+    const { version } = this.props
     return (
       <Layout>
         <Heading version={version} />
         <h1 style={styles.h1}>Granby House of Prayer</h1>
         <p style={styles.p}>Version: {version || 1}</p>
-        <Section component={<Who />} section='who' imageSrc={bg1} alt='bg1' revealed={false} />
-        <Section component={<What />}  section='what' imageSrc={bg2} alt='bg1' revealed={false} />
-        <Section component={<When />}  section='when' imageSrc={bg3} alt='bg1' revealed={false} />
-        <Section component={<Where />}  section='where' imageSrc={bg4} alt='bg1' revealed={false} />
-        <Section component={<Why />}  section='why' imageSrc={bg5} alt='bg1' revealed={false} />
-        <Section component={<How />}  section='how' imageSrc={bg5} alt='bg1' revealed={false} />
+        <Section
+          component={<Who />}
+          section="who"
+          imageSrc={bg1}
+          alt="bg1"
+          revealed={false}
+        />
+        <Section
+          component={<What />}
+          section="what"
+          imageSrc={bg2}
+          alt="bg1"
+          revealed={false}
+        />
+        <Section
+          component={<When />}
+          section="when"
+          imageSrc={bg3}
+          alt="bg1"
+          revealed={false}
+        />
+        <Section
+          component={<Where />}
+          section="where"
+          imageSrc={bg4}
+          alt="bg1"
+          revealed={false}
+        />
+        <Section
+          component={<Why />}
+          section="why"
+          imageSrc={bg5}
+          alt="bg1"
+          revealed={false}
+        />
+        <Section
+          component={<How />}
+          section="how"
+          imageSrc={bg5}
+          alt="bg1"
+          revealed={false}
+        />
         {versions.map(version => (
-          <Link key={version} style={styles.about} to={version === 1 ? '/' : `/v${version}`}>
+          <Link
+            key={version}
+            style={styles.about}
+            to={version === 1 ? '/' : `/v${version}`}
+          >
             Version {version}
           </Link>
         ))}
