@@ -14,10 +14,7 @@ const When = () => (
         rel="noopener"
         href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NTVucXRxaWlvZXQ2OGIwMHEyZDNiNXU3ZGJfMjAxODA4MjBUMjIzMDAwWiBjaGFmZmVxYUBt&amp;tmsrc=chaffeqa%40gmail.com&amp;scp=ALL"
       >
-        <img
-          border="0"
-          src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"
-        />
+        Google Calendar
       </a>
     </p>
   </div>

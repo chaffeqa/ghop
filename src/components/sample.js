@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import Layout from './layout'
 import Heading from './Heading'
-import Ipsom from './ipsom'
+// import Ipsom from './ipsom'
 import Who from './who'
 import What from './what'
 import When from './when'
@@ -55,14 +55,6 @@ const styles = {
     padding: '0 1rem',
     maxWidth: '100%',
     minWidth: '50%',
-  },
-  about: {
-    height: '5vh',
-    color: 'white',
-    width: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 }
 const versions = [1, 2, 3]
@@ -146,7 +138,6 @@ class Sample extends React.Component {
       <Layout>
         <Heading version={version} />
         <h1 style={styles.h1}>Granby House of Prayer</h1>
-        <p style={styles.p}>Version: {version || 1}</p>
         <Section
           component={<Who />}
           section="who"
@@ -171,14 +162,14 @@ class Sample extends React.Component {
         <Section
           component={<Where />}
           section="where"
-          imageSrc={bg4}
+          imageSrc={bg1}
           alt="bg1"
           revealed={false}
         />
         <Section
           component={<Why />}
           section="why"
-          imageSrc={bg5}
+          imageSrc={bg4}
           alt="bg1"
           revealed={false}
         />
@@ -189,15 +180,6 @@ class Sample extends React.Component {
           alt="bg1"
           revealed={false}
         />
-        {versions.map(version => (
-          <Link
-            key={version}
-            style={styles.about}
-            to={version === 1 ? '/' : `/v${version}`}
-          >
-            Version {version}
-          </Link>
-        ))}
       </Layout>
     )
   }

@@ -1,10 +1,10 @@
 import React from 'react'
 
-import bg1 from './1.jpg'
-import bg2 from './2.jpg'
-import bg3 from './3.jpg'
-import bg4 from './4.jpg'
-import bg5 from './5.jpg'
+import bg1 from './yellow-wood.jpg'
+import bg2 from './flower-headress.jpg'
+import bg3 from './praise-field.jpg'
+import bg4 from './green-wood.jpg'
+import bg5 from './4.jpg'
 import './animation.css'
 
 const durationMs = 5000
@@ -34,7 +34,7 @@ const styles = {
   },
 }
 
-const bgs = [bg3, bg4, bg1, bg2, bg5]
+const bgs = [bg1, bg2, bg3, bg4, bg5]
 
 // const mappings = [
 //   {

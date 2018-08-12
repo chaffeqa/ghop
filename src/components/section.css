@@ -9,7 +9,7 @@
 }
 @media (min-width: 800px) {
   .section {
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
   }
 }
 @media (max-width: 800px) {

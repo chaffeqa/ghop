@@ -13,7 +13,7 @@ const Who = () => (
     </p>
     <p>
       Anyone, at any point of their walk with God, or even those intrigued at
-      who He is, is welcome to come!
+      who He is, are welcome to come!
     </p>
   </div>
 )
