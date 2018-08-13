@@ -24,7 +24,7 @@ const How = () => (
     <p>
       Hence we are passiionate about supporting fulltime singers and musicians
       via individual funding. If this is your heart, join is in{' '}
-      <a onClick={() => alert('TODO')}>funding the singers and musicians</a>.
+      <a href="/" onClick={() => alert('TODO')}>funding the singers and musicians</a>.
     </p>
   </div>
 )

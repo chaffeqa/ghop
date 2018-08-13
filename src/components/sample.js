@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 
 import Layout from './layout'
 import Heading from './Heading'
@@ -57,7 +57,7 @@ const styles = {
     minWidth: '50%',
   },
 }
-const versions = [1, 2, 3]
+// const versions = [1, 2, 3]
 
 class Section extends React.Component {
   render() {
