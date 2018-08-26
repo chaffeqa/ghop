@@ -4,19 +4,23 @@ import React from 'react'
 import Layout from './layout'
 import Heading from './Heading'
 // import Ipsom from './ipsom'
-import Who from './who'
-import What from './what'
-import When from './when'
-import Where from './where'
-import Why from './Why'
-import How from './How'
+// import Who from './who'
+// import What from './what'
+// import When from './when'
+// import Where from './where'
+// import Why from './Why'
+// import How from './How'
+import Vision from './vision'
+import About from './about'
+import Dilemna from './dilemna'
+import Resources from './resources'
 // import Lorem from './lorem'
 
 import bg1 from './Heading/1.jpg'
 import bg2 from './Heading/2.jpg'
-import bg3 from './Heading/3.jpg'
-import bg4 from './Heading/4.jpg'
-import bg5 from './Heading/5.jpg'
+// import bg3 from './Heading/3.jpg'
+// import bg4 from './Heading/4.jpg'
+// import bg5 from './Heading/5.jpg'
 import './section.css'
 
 const styles = {
@@ -41,12 +45,12 @@ const styles = {
     margin: `2rem auto 0`,
     display: 'flex',
     flexFlow: 'row nowrap',
-    alignItems: 'center',
+    alignItems: 'flex-top',
     justifyContent: 'space-between',
   },
   sectionImg: {
     flex: '0 1 auto',
-    margin: `1rem auto`,
+    margin: `0 auto 1rem`,
     maxWidth: '100%',
     minWidth: '50%',
   },
@@ -139,47 +143,30 @@ class Sample extends React.Component {
         <Heading version={version} />
         <h1 style={styles.h1}>Granby House of Prayer</h1>
         <Section
-          component={<Who />}
-          section="who"
-          imageSrc={bg1}
-          alt="bg1"
-          revealed={false}
-        />
-        <Section
-          component={<What />}
-          section="what"
+          component={<About />}
+          section="about"
           imageSrc={bg2}
           alt="bg1"
-          revealed={false}
+          revealed={true}
         />
+        <h3>Dilemna</h3>
         <Section
-          component={<When />}
-          section="when"
-          imageSrc={bg3}
-          alt="bg1"
-          revealed={false}
-        />
-        <Section
-          component={<Where />}
-          section="where"
+          component={<Dilemna />}
+          section="dilemna"
           imageSrc={bg1}
           alt="bg1"
-          revealed={false}
+          revealed={true}
         />
+        <h3>Vision</h3>
         <Section
-          component={<Why />}
-          section="why"
-          imageSrc={bg4}
+          component={<Vision />}
+          section="vision"
+          imageSrc={bg1}
           alt="bg1"
-          revealed={false}
+          revealed={true}
         />
-        <Section
-          component={<How />}
-          section="how"
-          imageSrc={bg5}
-          alt="bg1"
-          revealed={false}
-        />
+        <h3>Resources</h3>
+        <Resources />
       </Layout>
     )
   }

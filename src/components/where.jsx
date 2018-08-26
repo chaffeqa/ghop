@@ -2,7 +2,7 @@ import React from 'react'
 
 const When = () => (
   <div>
-    <h2>When</h2>
+    <h2>Where</h2>
     <p>
       We currently meet every Monday at{' '}
       <a href="https://goo.gl/maps/vzHhpmZ4mYv" rel="noopener" target="_blank">
