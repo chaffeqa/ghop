@@ -34,7 +34,7 @@ const Layout = ({ children, data }) => (
             { name: 'keywords', content: 'house of prayer, ghop' },
           ]}
         />
-        <div style={LayoutStyles}>{children}</div>
+      <div className="layout" style={LayoutStyles}>{children}</div>
       </>
     )}
   />

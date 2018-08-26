@@ -11,22 +11,24 @@ const durationMs = 5000
 
 const styles = {
   wrapper: {
-    height: '80vh',
+    height: '90vh',
     width: '100vw',
     position: 'relative',
   },
   bgItem: {
-    position: 'absolute',
+    position: 'fixed',
+    zIndex: '-1',
     top: 0,
     left: 0,
-    height: '100%',
-    width: '100%',
+    height: '90vh',
+    width: '100vw',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center',
-    backgroundColor: 'black',
+    backgroundColor: 'transparent',
+    // backgroundAttachment: 'fixed',
     backgroundSize: 'cover',
     opacity: 0,
-    willChange: 'opacity',
+    willChange: 'opacity,transform',
     backgroundBlendMode: 'screen',
     animationName: 'heading-bg-animation',
     animationTimingFunction: `ease-out`,
@@ -65,7 +67,7 @@ const BgBlendImage = ({ item, index }) => {
 }
 
 const Heading = ({ version }) => (
-  <div style={styles.wrapper}>
+  <div className="heading-img-container" style={styles.wrapper}>
     {[1, 3].includes(version) &&
       bgs.map((item, i) => <BgImage key={i} index={i} />)}
     {[2, 3].includes(version) &&

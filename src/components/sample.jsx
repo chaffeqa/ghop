@@ -25,8 +25,9 @@ import './section.css'
 
 const styles = {
   h1: {
-    height: '20vh',
+    height: '10vh',
     width: '100%',
+    fontSize: '2rem',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -119,21 +120,21 @@ class Sample extends React.Component {
 
   componentDidMount() {
     if (!this.boundListener) {
-      this.updateSections()
-      document.addEventListener('resize', this.updateSections)
-      document.addEventListener('scroll', this.onScroll, { passive: true })
-      this.boundListener = true
+      // this.updateSections()
+      // document.addEventListener('resize', this.updateSections)
+      // document.addEventListener('scroll', this.onScroll, { passive: true })
+      // this.boundListener = true
     } else {
       console.log('ignore')
     }
   }
 
   componentWillUnmount() {
-    if (this.boundListener) {
-      document.removeEventListener('resize', this.updateSections)
-      document.removeEventListener('scroll', this.onScroll)
-      this.boundListener = false
-    }
+    // if (this.boundListener) {
+    //   document.removeEventListener('resize', this.updateSections)
+    //   document.removeEventListener('scroll', this.onScroll)
+    //   this.boundListener = false
+    // }
   }
 
   render() {
@@ -141,32 +142,34 @@ class Sample extends React.Component {
     return (
       <Layout>
         <Heading version={version} />
-        <h1 style={styles.h1}>Granby House of Prayer</h1>
-        <Section
-          component={<About />}
-          section="about"
-          imageSrc={bg2}
-          alt="bg1"
-          revealed={true}
-        />
-        <h3>Dilemna</h3>
-        <Section
-          component={<Dilemna />}
-          section="dilemna"
-          imageSrc={bg1}
-          alt="bg1"
-          revealed={true}
-        />
-        <h3>Vision</h3>
-        <Section
-          component={<Vision />}
-          section="vision"
-          imageSrc={bg1}
-          alt="bg1"
-          revealed={true}
-        />
-        <h3>Resources</h3>
-        <Resources />
+        <div className="content">
+          <h1 style={styles.h1}>Granby House of Prayer</h1>
+          <Section
+            component={<About />}
+            section="about"
+            imageSrc={bg2}
+            alt="bg1"
+            revealed={true}
+          />
+          <h3>Dilemna</h3>
+          <Section
+            component={<Dilemna />}
+            section="dilemna"
+            imageSrc={bg1}
+            alt="bg1"
+            revealed={true}
+          />
+          <h3>Vision</h3>
+          <Section
+            component={<Vision />}
+            section="vision"
+            imageSrc={bg1}
+            alt="bg1"
+            revealed={true}
+          />
+          <h3>Resources</h3>
+          <Resources />
+        </div>
       </Layout>
     )
   }
