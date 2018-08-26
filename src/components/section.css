@@ -72,10 +72,9 @@ h3 {
   flex-flow: row wrap;
 }
 .resource {
-  max-width: 300px;
+  max-width: 400px;
   min-height: 5rem;
   border: 0.05rem solid rgba(0,0,0,0.1);
-  
   border-radius: 1rem;
   margin: 1rem 2rem;
   padding: 0.5rem;
