@@ -2,7 +2,7 @@ import React from 'react'
 
 const Resource = ({title, description, imageUrl, url}) => {
   return (
-    <a target="_blank" href={url} className="resource">
+    <a target="_blank" rel="noopener noreferrer" href={url} className="resource">
       <div className="resource-img" style={{backgroundImage: `url(${imageUrl})`}}></div>
       <div className="resource-group">
         <div className="resource-title">{title}</div>
@@ -21,7 +21,7 @@ const resources = [
   },
   {
     title: 'Prayer Furnaces',
-    description: `The mission is to plant a sustainable furnace of 24-7-365 worship, prayer and supernatural explosive outreach, releasing a sound of indigenous, vertical, creative worship in every community, people group, city and nation in the world.`,
+    description: `The mission is to plant a sustainable furnace of 24-7-365 worship, prayer and supernatural explosive outreach, releasing a sound of indigenous, vertical, creative worship everywhere`,
     imageUrl: 'https://burn247.s3.amazonaws.com/assets/burn247_logo-28de8a0e68d7bd78fc7e474d282cad8b.png',
     url: `https://www.burn24-7.com/`,
   },

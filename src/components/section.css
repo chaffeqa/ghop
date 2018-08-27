@@ -89,12 +89,14 @@ h3 {
   margin-top: 2rem;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 .resource {
   max-width: 400px;
-  min-height: 5rem;
+  min-height: 8rem;
   border: 0.05rem solid rgba(0,0,0,0.1);
-  border-radius: 1rem;
+  border-radius: 0.2rem;
   margin: 1rem 2rem;
   padding: 0.5rem;
   display: flex;

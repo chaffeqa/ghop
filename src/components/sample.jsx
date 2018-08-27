@@ -14,6 +14,7 @@ import Vision from './vision'
 import About from './about'
 import Dilemna from './dilemna'
 import Resources from './resources'
+import SEO from './SEO'
 // import Lorem from './lorem'
 
 import bg1 from './Heading/1.jpg'
@@ -123,7 +124,8 @@ class Sample extends React.Component {
       // this.updateSections()
       // document.addEventListener('resize', this.updateSections)
       // document.addEventListener('scroll', this.onScroll, { passive: true })
-      // this.boundListener = true
+      document.body.classList.add('entrance-in')
+      this.boundListener = true
     } else {
       console.log('ignore')
     }
@@ -141,6 +143,7 @@ class Sample extends React.Component {
     const { version } = this.props
     return (
       <Layout>
+        <SEO />
         <Heading version={version} />
         <div className="content">
           <h1 style={styles.h1}>Granby House of Prayer</h1>

@@ -66,12 +66,22 @@ const BgBlendImage = ({ item, index }) => {
   return <div style={bgBlendStyleFor(index, nextIndex)} />
 }
 
+const IntroImg = () => (
+  <div className="intro-img">
+    <div className="intro-img__t1">Hosting</div>
+      <div className="intro-img__t2">God's</div>
+        <div className="intro-img__t3">Presence</div>
+  </div>
+)
+
 const Heading = ({ version }) => (
   <div className="heading-img-container" style={styles.wrapper}>
     {[1, 3].includes(version) &&
       bgs.map((item, i) => <BgImage key={i} index={i} />)}
     {[2, 3].includes(version) &&
       bgs.map((item, i) => <BgBlendImage key={i} index={i} />)}
+      
+    <IntroImg />
   </div>
 )
 

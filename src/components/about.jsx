@@ -3,7 +3,7 @@ import React from 'react'
 const Who = () => (
   <div>
     <p>
-      The Granby House of Prayer (<a href="https://ghop.us.com" rel="noopener">
+      The Granby House of Prayer (<a href="https://ghop.us.com" rel="noopener noreferrer">
         ghop
       </a>){` `}
       is a all-are-welcome House of Prayer that meets to worship our Lord and
@@ -24,7 +24,7 @@ const Who = () => (
       Calendar Link:{' '}
       <a
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
         href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NTVucXRxaWlvZXQ2OGIwMHEyZDNiNXU3ZGJfMjAxODA4MjBUMjIzMDAwWiBjaGFmZmVxYUBt&amp;tmsrc=chaffeqa%40gmail.com&amp;scp=ALL"
       >
         Google Calendar

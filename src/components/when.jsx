@@ -11,7 +11,7 @@ const When = () => (
       Calendar Link:{' '}
       <a
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
         href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NTVucXRxaWlvZXQ2OGIwMHEyZDNiNXU3ZGJfMjAxODA4MjBUMjIzMDAwWiBjaGFmZmVxYUBt&amp;tmsrc=chaffeqa%40gmail.com&amp;scp=ALL"
       >
         Google Calendar

@@ -4,7 +4,7 @@ const Who = () => (
   <div>
     <h2>Who</h2>
     <p>
-      The Granby House of Prayer (<a href="https://ghop.us.com" rel="noopener">
+      The Granby House of Prayer (<a href="https://ghop.us.com" rel="noopener noreferrer">
         ghop
       </a>){` `}
       is a all-are-welcome House of Prayer that meets to worship our Lord and

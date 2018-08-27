@@ -6,7 +6,7 @@ const How = () => (
     <p>
       We do not have the ability to influence the government like David had.
       However, <strong>are the kingdom</strong>. Just like{' '}
-      <a href="https://www.biblestudytools.com/acts/2-44.html" rel="noopener">
+      <a href="https://www.biblestudytools.com/acts/2-44.html" rel="noopener noreferrer">
         the Church in Acts
       </a>, we are able to understand that it is our privelage to minister to
       God through our finances. Purhaps we do not have musical talent, but do

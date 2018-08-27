@@ -7,14 +7,14 @@ const Why = () => (
       David, who was declared by God in to be{' '}
       <a
         href="https://www.biblestudytools.com/1-samuel/13-14.html"
-        rel="noopener"
+        rel="noopener noreferrer"
         target="_blank"
       >
         one after God's own heart
       </a>, organized and paid 4,000 musicians and 288 singers to worship God
       night and day (<a
         href="https://www.biblestudytools.com/1-chronicles/23.html"
-        rel="noopener"
+        rel="noopener noreferrer"
         target="_blank"
       >
         1 Chr. 23:1–25:31
